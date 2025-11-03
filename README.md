@@ -15,17 +15,23 @@ cd dexchange
 
 
 2️⃣ Installer les dépendances
+```bash
 npm install
+```
 
 3️⃣ Configurer les variables d'environnement
 
 Créer un fichier .env basé sur .env.example
 
+```bash
 API_KEY=super-secret-key
 MONGO_URI=your_mongodb_connection_string
+```
 
 4️⃣ Démarrer le serveur
+```bash
 npm run start:dev
+```
 
 Swagger ➜ http://localhost:3000/docs
 
@@ -36,14 +42,17 @@ Toutes les requêtes doivent contenir :
 x-api-key: TON_API_KEY
 
 📡 Endpoints
+```bash
 Méthode	Endpoint	Description
 POST	/transfers	Créer un transfert
 GET	/transfers	Lister les transferts
 GET	/transfers/{id}	Récupérer un transfert
 POST	/transfers/{id}/process	Traiter un transfert
 POST	/transfers/{id}/cancel	Annuler un transfert
+```
 
 📝 Exemple pour POST /transfers
+```bash
 {
   "amount": 12500,
   "currency": "XOF",
@@ -54,7 +63,7 @@ POST	/transfers/{id}/cancel	Annuler un transfert
   },
   "metadata": {}
 }
-
+```
 🔄 Flow du transfert
 
 PENDING lors de la création
