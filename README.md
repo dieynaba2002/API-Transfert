@@ -74,8 +74,8 @@ PENDING lors de la création
 
 🛠️ Stack Technique
 Outil	Rôle
-NestJS	Framework Node
+NestJS	Framework backend
 MongoDB + Mongoose	Base de données
 Swagger	Documentation API
-class-validator	Validation DTO
-Custom API Key Guard	Sécurité
+class-validator	Validation des DTO
+API Key Guard	Sécurisation
